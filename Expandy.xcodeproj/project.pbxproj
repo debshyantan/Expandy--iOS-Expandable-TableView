@@ -12,6 +12,8 @@
 		80FB55B120A5BF4100C64821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FB55AF20A5BF4100C64821 /* Main.storyboard */; };
 		80FB55B320A5BF4300C64821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FB55B220A5BF4300C64821 /* Assets.xcassets */; };
 		80FB55B620A5BF4300C64821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FB55B420A5BF4300C64821 /* LaunchScreen.storyboard */; };
+		80FB55BE20A5BFE000C64821 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB55BD20A5BFE000C64821 /* CustomCell.swift */; };
+		80FB55C020A5C0B300C64821 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB55BF20A5C0B300C64821 /* CollapsibleTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		80FB55B220A5BF4300C64821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FB55B520A5BF4300C64821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80FB55B720A5BF4300C64821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FB55BD20A5BFE000C64821 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		80FB55BF20A5C0B300C64821 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				80FB55B220A5BF4300C64821 /* Assets.xcassets */,
 				80FB55B420A5BF4300C64821 /* LaunchScreen.storyboard */,
 				80FB55B720A5BF4300C64821 /* Info.plist */,
+				80FB55BD20A5BFE000C64821 /* CustomCell.swift */,
+				80FB55BF20A5C0B300C64821 /* CollapsibleTableViewHeader.swift */,
 			);
 			path = Expandy;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FB55AE20A5BF4100C64821 /* ViewController.swift in Sources */,
+				80FB55BE20A5BFE000C64821 /* CustomCell.swift in Sources */,
+				80FB55C020A5C0B300C64821 /* CollapsibleTableViewHeader.swift in Sources */,
 				80FB55AC20A5BF4100C64821 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
