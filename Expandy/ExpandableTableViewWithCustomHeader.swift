@@ -17,9 +17,6 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Auto resizing the height of the cell
-//        tableView.estimatedRowHeight = 44.0
-//        tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -44,7 +41,6 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableViewAutomaticDimension
         return 30
     }
     
@@ -54,36 +50,18 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
         
         let headerView = UIView()
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "cell1") as! CustomCell1
-//        headerCell.tag = section
         headerCell.label.text = sectionName[section]
         headerView.addSubview(headerCell)
         headerView.tag = section
-//        if collapsed[section]{
-//            headerCell.imageVie.image = #imageLiteral(resourceName: "arrowright")
-//        } else {
-//            headerCell.imageVie.image = #imageLiteral(resourceName: "arrowDown")
-//        }
+
         headerCell.imageVie.tag = section+1000
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapHeader(_:)))
         headerView.addGestureRecognizer(tapGesture)
         
         return headerView
-        
-        
-        //        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
-        //
-        //        header.titleLabel.text = sectionName[section]
-        //        //        header.arrowLabel.text = ">"
-        //        header.setCollapsed(collapsed[section])
-        ////        print(sections[section].collapsed)
-        //        header.section = section
-        //        header.delegate = self
-        //
-        //        return header
     }
     
     
-    //
     @objc func tapHeader(_ gestureRecognizer: UITapGestureRecognizer) {
 
         let section  = gestureRecognizer.view?.tag
@@ -107,16 +85,12 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
         if flag {
             
             UIView.animate(withDuration: 0.3) {
-//                 tempview?.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 0.0, 0.0, 0.0)
                 tempview?.transform = CGAffineTransform.identity
-
             }
         } else {
 
             UIView.animate(withDuration: 0.3) {
                 tempview?.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2.0)
-
-//                tempview?.layer.transform = CATransform3DMakeRotation(CGFloat(Double.pi), 1.0, 0.0, 0.0)
             }
         }
 
@@ -126,7 +100,6 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 71.5
-        //        return 44
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -137,22 +110,3 @@ class ExpandableTableViewWithCustomHeader: UIViewController, UITableViewDelegate
         print("indexPath--->\(indexPath)")
     }
 }
-
-
-//
-// MARK: - Section Header Delegate
-//
-extension ExpandableTableViewWithCustomHeader: CollapsibleTableViewHeaderDelegate {
-    
-    func toggleSection(_ header: CollapsibleTableViewHeader, section: Int) {
-        let collapsed1 = !collapsed[section]
-        
-        // Toggle collapse
-        collapsed[section] = collapsed1
-        header.setCollapsed(collapsed1)
-        
-        tableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
-    }
-    
-}
-
