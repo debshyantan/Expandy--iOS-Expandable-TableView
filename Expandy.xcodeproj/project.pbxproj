@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80253BC420AC206F004F972F /* CustomCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80253BC320AC206F004F972F /* CustomCell1.swift */; };
+		80253BC620AC22D3004F972F /* ExpandableTableViewWithCustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80253BC520AC22D3004F972F /* ExpandableTableViewWithCustomHeader.swift */; };
 		80FB55AC20A5BF4100C64821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB55AB20A5BF4100C64821 /* AppDelegate.swift */; };
 		80FB55AE20A5BF4100C64821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FB55AD20A5BF4100C64821 /* ViewController.swift */; };
 		80FB55B120A5BF4100C64821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FB55AF20A5BF4100C64821 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80253BC320AC206F004F972F /* CustomCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1.swift; sourceTree = "<group>"; };
+		80253BC520AC22D3004F972F /* ExpandableTableViewWithCustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewWithCustomHeader.swift; sourceTree = "<group>"; };
 		80FB55A820A5BF4100C64821 /* Expandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FB55AB20A5BF4100C64821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FB55AD20A5BF4100C64821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,11 +64,13 @@
 			children = (
 				80FB55AB20A5BF4100C64821 /* AppDelegate.swift */,
 				80FB55AD20A5BF4100C64821 /* ViewController.swift */,
+				80253BC520AC22D3004F972F /* ExpandableTableViewWithCustomHeader.swift */,
 				80FB55AF20A5BF4100C64821 /* Main.storyboard */,
 				80FB55B220A5BF4300C64821 /* Assets.xcassets */,
 				80FB55B420A5BF4300C64821 /* LaunchScreen.storyboard */,
 				80FB55B720A5BF4300C64821 /* Info.plist */,
 				80FB55BD20A5BFE000C64821 /* CustomCell.swift */,
+				80253BC320AC206F004F972F /* CustomCell1.swift */,
 				80FB55BF20A5C0B300C64821 /* CollapsibleTableViewHeader.swift */,
 			);
 			path = Expandy;
@@ -144,7 +150,9 @@
 				80FB55AE20A5BF4100C64821 /* ViewController.swift in Sources */,
 				80FB55BE20A5BFE000C64821 /* CustomCell.swift in Sources */,
 				80FB55C020A5C0B300C64821 /* CollapsibleTableViewHeader.swift in Sources */,
+				80253BC620AC22D3004F972F /* ExpandableTableViewWithCustomHeader.swift in Sources */,
 				80FB55AC20A5BF4100C64821 /* AppDelegate.swift in Sources */,
+				80253BC420AC206F004F972F /* CustomCell1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
